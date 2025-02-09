@@ -1,5 +1,3 @@
-AOS.init();
-
 // Efek Salju
 const canvas = document.getElementById("snow");
 const ctx = canvas.getContext("2d");
@@ -39,10 +37,9 @@ function moveSnow() {
     }
 }
 
-setInterval(drawSnow, 33);
+setInterval(drawSnow, 25);
 
-// Dark Mode
-const darkModeToggle = document.getElementById("darkModeToggle");
-darkModeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-});
+// Scroll ke bagian tertentu
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
