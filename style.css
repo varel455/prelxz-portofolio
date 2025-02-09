@@ -9,6 +9,7 @@ body {
     background: linear-gradient(45deg, #1a1a2e, #16213e);
     color: white;
     text-align: center;
+    overflow-x: hidden;
 }
 
 header {
@@ -72,4 +73,13 @@ button:hover {
         flex-direction: column;
         padding: 10px 0;
     }
+}
+
+/* Musik Container */
+.music-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 90%;
 }
