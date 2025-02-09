@@ -1,90 +1,61 @@
-/* styles.css */
-body {
-    background-color: #121212;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(10px);
-    padding: 15px 0;
+body {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 50px;
-    z-index: 1000;
 }
 
-.navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff0066;
-    text-decoration: none;
-}
-
-.navbar ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.navbar ul li {
-    display: inline;
-}
-
-.navbar ul li a {
-    text-decoration: none;
+nav ul li a {
     color: white;
-    transition: 0.3s;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.navbar ul li a:hover {
-    color: #ff0066;
+button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, #ff0066, #6600ff);
-}
-
-h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-p {
-    font-size: 18px;
-}
-
-.content {
-    padding: 80px 50px;
-    margin: 50px auto;
-    width: 80%;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease-in-out;
-}
-
-.content:hover {
-    transform: scale(1.05);
+section {
+    margin: 50px 0;
 }
 
 footer {
     padding: 20px;
-    background: #222;
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
 }
