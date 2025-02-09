@@ -5,46 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PrelXz - Portofolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <canvas id="snow"></canvas>
 
+    <!-- Navigasi -->
     <header>
-        <h1 data-aos="fade-down">PrelXz</h1>
+        <h1 class="logo">PrelXz</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="about.html">Tentang</a></li>
-                <li><a href="projects.html">Proyek</a></li>
-                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#kontak">Kontak</a></li>
             </ul>
         </nav>
-        <button id="darkModeToggle">🌙</button>
     </header>
 
-    <section class="intro" data-aos="fade-up">
+    <!-- Halaman Utama -->
+    <section id="home" class="hero">
         <h2>Selamat Datang</h2>
         <p>Halo! Saya PrelXz, seorang penggemar musik, game, dan bisnis.</p>
+        <button onclick="scrollToSection('proyek')">Lihat Proyek</button>
     </section>
 
-    <section class="music" data-aos="fade-up">
+    <!-- Tentang -->
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>Saya suka bermain game, mendengarkan musik, dan menjual barang.</p>
+    </section>
+
+    <!-- Proyek -->
+    <section id="proyek">
+        <h2>Proyek Saya</h2>
+        <p>Beberapa proyek yang sedang saya kerjakan.</p>
+    </section>
+
+    <!-- Pemutar Lagu -->
+    <section id="musik">
         <h2>Pemutar Lagu</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/l08Zw-RY__Q?autoplay=1&loop=1&playlist=l08Zw-RY__Q" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/l08Zw-RY__Q?autoplay=1&loop=1&playlist=l08Zw-RY__Q" frameborder="0" allowfullscreen></iframe>
     </section>
 
-    <section class="contact" data-aos="fade-up">
+    <!-- Kontak -->
+    <section id="kontak">
         <h2>Hubungi Saya</h2>
-        <a href="https://wa.me/085655649546" class="btn">WhatsApp</a>
-        <a href="mailto:ryuxakun@gmail.com" class="btn">Email</a>
-        <a href="https://www.instagram.com/vrelooo0" class="btn">Instagram</a>
+        <a href="https://wa.me/085655649546" target="_blank">WhatsApp</a>
+        <a href="mailto:ryuxakun@gmail.com">Email</a>
+        <a href="https://www.instagram.com/vrelooo0" target="_blank">Instagram</a>
     </section>
 
     <footer>
         <p>© 2025 PrelXz</p>
     </footer>
 
-    <script src="script.js"></script>
+    <canvas id="snow"></canvas>
+
 </body>
 </html>
