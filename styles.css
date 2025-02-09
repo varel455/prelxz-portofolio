@@ -8,7 +8,8 @@
 }
 
 body {
-    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    background: url('https://source.unsplash.com/1920x1080/?technology,futuristic') no-repeat center center fixed;
+    background-size: cover;
     color: white;
     text-align: center;
     transition: background 0.3s, color 0.3s;
