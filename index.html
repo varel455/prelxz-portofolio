@@ -3,46 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PrelXz - Portofolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <title>PrelXz - Beranda</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="#" class="logo">PrelXz</a>
-        <ul>
-            <li><a href="#music">Musik</a></li>
-            <li><a href="#gaming">Gaming</a></li>
-            <li><a href="#selling">Jualan</a></li>
-        </ul>
-    </nav>
+    <canvas id="snow"></canvas>
 
-    <header class="hero">
-        <h1 data-aos="fade-up">Welcome to PrelXz</h1>
-        <p data-aos="fade-up" data-aos-delay="300">Hobi Musik | Gaming | Jualan</p>
+    <header>
+        <h1 data-aos="fade-down">PrelXz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="projects.html">Proyek</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">🌙</button>
     </header>
 
-    <section id="music" class="content" data-aos="fade-right">
-        <h2>🎵 Musik</h2>
-        <p>Saya suka musik dan memainkan beberapa alat musik.</p>
+    <section data-aos="fade-up">
+        <h2>Selamat Datang</h2>
+        <p>Halo! Saya PrelXz, seorang penggemar musik, game, dan bisnis.</p>
     </section>
 
-    <section id="gaming" class="content" data-aos="fade-left">
-        <h2>🎮 Gaming</h2>
-        <p>Game favorit saya dan pencapaian gaming ada di sini!</p>
-    </section>
-
-    <section id="selling" class="content" data-aos="fade-right">
-        <h2>🛒 Jualan</h2>
-        <p>Lihat barang-barang yang saya jual dengan harga terbaik.</p>
+    <section data-aos="fade-up">
+        <h2>Pemutar Lagu</h2>
+        <div id="youtubePlayer"></div>
     </section>
 
     <footer>
-        <p>© 2025 PrelXz</p>
+        <p>&copy; 2025 PrelXz</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
