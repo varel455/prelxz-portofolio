@@ -1,6 +1,7 @@
 const canvas = document.getElementById("visualizer");
 const ctx = canvas.getContext("2d");
 const audio = document.getElementById("audio");
+const playButton = document.getElementById("play-button");
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -33,12 +34,17 @@ function animate() {
     }
 }
 
-audio.onplay = () => {
+playButton.addEventListener("click", () => {
     if (audioContext.state === "suspended") {
         audioContext.resume();
     }
-    animate();
-};
+
+    if (audio.paused) {
+        audio.play();
+        playButton.style.display = "none"; // Hilangkan tombol saat musik diputar
+        animate();
+    }
+});
 
 window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
