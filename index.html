@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Music Visualizer</title>
-    <style>
-        body { margin: 0; overflow: hidden; background: black; }
-        canvas { display: block; }
-        audio { position: fixed; bottom: 10px; left: 50%; transform: translateX(-50%); }
-    </style>
+    <title>YouTube Music Visualizer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="visualizer-container">
+        <canvas id="visualizer"></canvas>
+    </div>
     <audio id="audio" controls>
-        <source src="wildflower.mp3" type="audio/mp3">
+        <source src="song.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
-    <script type="module" src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
